@@ -26,9 +26,9 @@ const ItemAcomodacao = ({
             <div className="p-2 absolute w-full flex flex-row justify-between items-center ">
                 <div> 
                     {preferidoHospedes && (
-                        <span className="bg-white rounded-full px-4 py-1 font-semibold"> 
+                        <div className="bg-white rounded-full px-3 h-7 flex items-center justify-center font-semibold shadow-lg"> 
                             Preferido dos hóspedes 
-                        </span>
+                        </div>
                     )}
                 </div>              
                 <IconHeartFilled className="stroke-white opacity-80"
@@ -39,11 +39,13 @@ const ItemAcomodacao = ({
             <figcaption className="pt-2">
                 <div className="flex flex-row justify-between">
                     <span className="font-semibold">{local}</span>
-                    <div className="flex flex-row">
-                        <IconStarFilled 
+                    <div className="flex flex-row items-center gap-1">
+                        <IconStarFilled
+                            className="mb-[3px]"
                             aria-label="Avaliações"
-                            size={20}/>
-                        <span className="font-semibold">{avaliacao}</span>
+                            size={14}
+                        />
+                        <span className="font-semibold  ">{avaliacao}</span>
                     </div>
                 </div>
                 <div>Anfitrião(o): {anfitriao}</div>

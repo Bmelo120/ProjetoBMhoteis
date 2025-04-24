@@ -8,6 +8,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Photo } from "@/types/bmhoteisDados";
 
+
 interface NavegacaoAbasProps {
     icons: Photo[] 
 }
@@ -30,10 +31,10 @@ const NavegacaoAbas = ( props: NavegacaoAbasProps ) => {
                 }}> 
 
                 {icones.map((icone, indice)=>(
-                    <SwiperSlide key={indice}>
-                        <Link href={icone.url} className="flex flex-col items-center hover:text-purple-400">
+                    <SwiperSlide key={indice} className="">
+                        <Link href={icone.url} className="flex flex-col items-center hover:text-purple-400 text-center gap-1 text-sm">
                             <Image src={icone.source} alt={icone.description} width={24} height={24}/>
-                                <span className="text-sm">{icone.description}</span>
+                            <span className="text-sm">{icone.description}</span>
                         </Link>
                     </SwiperSlide>
                 ))}
