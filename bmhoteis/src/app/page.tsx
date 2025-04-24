@@ -12,19 +12,19 @@ export default async function Home() {
 
   return (
     <>
-      <header className=" container mx-auto">      
+      <header className=" container mx-auto px-5">      
         <BarraSuperior/>
         <BarraPesquisa/>
       </header>
 
       <hr className="my-6 border-gray-200"/>
 
-      <main className="container mx-auto">
+      <main className="container mx-auto px-5">
           <NavegacaoAbas icons={dados.icons}/>
           <Acomodacao accommodation={dados.accommodation}/>
       </main>
 
-      <footer className="bg-gray-200">
+      <footer className="bg-gray-200 px-5">
         <Rodape/>
       </footer>
     </>

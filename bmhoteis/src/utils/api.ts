@@ -2,7 +2,6 @@ import { Accommodation, BmhoteisApi } from "@/types/bmhoteisDados"
 
 export async function fetchData(): Promise<BmhoteisApi> {
     try{
-
         const responde = await fetch("https://web.codans.com.br/airbnb")
         const dados = responde.json()
         return dados
